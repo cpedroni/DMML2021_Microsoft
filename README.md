@@ -28,21 +28,22 @@ Overall, this results could still improve but are however above the baseline of 
 
 
 ## Methodology
-After Loading the training_data and doing some Exploratory Data analysy, we' ve done several step to build our classifier :
-* split the dataset  in 2 set 80% for training and 20 % for test set
-* create the function called 'metrics' to print the classification report ( accuracy, precision, recall, f1 score)
-* create different  TfIdf vectoriser with some basics parameters (sublinear_tf= True,,  tokenizer=word_tokenize,ngram_range= (1,1)..)  
-* test different models such as Logistic regression , Knn, DecisionTree , RandomForest to get the one that gives the best accuracy. after this step, we try our model on the unlabeled data to analyse how good it detect the difficulty.
-* To perform the accuracy , we did the
-    * preprocess that consisted in removing punctuation, stopword,X most/least frequent words and to do the stemming  
-    * reduce the number of feature using the SVD( instead of 3000 circa we' ve used 900)
-    * try other models such as multinomial, neural networks with Keras, Support Vector Machine
-Unortunatelly , all these methods and models didn't improve the classification report in a significant way 
+
+After Loading the training_data and doing some Exploratory Data Analysis, we did several steps to build our classifier :
+
+ * split the dataset in 2 sets; **80%** for training and **20 %** for test set
+ * create the `metrics` function that prints a classification report (accuracy, precision, recall, f1 score)
+ * create TfIdf vectorisers with different `(sublinear_tf= True,  tokenizer=word_tokenize, ngram_range= (1,1))`
+ * test multiple models such as Logistic regression , K-Nearest Neighbors, Decision Tree and Random Forest to find the one that has the best accuracy. After this step, we tested our models on the unlabeled data to submit it to the [Kaggle competition.](https://www.kaggle.com/c/detecting-the-difficulty-level-of-french-texts/overview)
+
+What we did to improve the accuracy :
+ * Preprocessing: remove punctuation, remove stopword, remove X most/least frequent words, stemming  
+ * Dimentionality reduction: reduce the number of feature using the TruncatedSVD
+ * Try other models: multinomail naive Bayes, Support Vector Machine, Neural Networks with Keras 
+ 
+Unortunatelly, all these methods and models didn't improve the accuracy. 
 
 
-
-
-
-## Our Video
+## The video
 
 [![DMML 2021 - Groupe Microsoft | Detecting the difficulty level of french texts](https://res.cloudinary.com/marcomontalbano/image/upload/v1639949988/video_to_markdown/images/youtube--E2dCIjSSVVc-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=E2dCIjSSVVc "DMML 2021 - Groupe Microsoft | Detecting the difficulty level of french texts")
