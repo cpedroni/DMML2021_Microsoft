@@ -33,7 +33,7 @@ After Loading the training_data and doing some Exploratory Data analysy, we' ve 
 * create the function called 'metrics' to print the classification report ( accuracy, precision, recall, f1 score)
 * create different  TfIdf vectoriser with some basics parameters (sublinear_tf= True,,  tokenizer=word_tokenize,ngram_range= (1,1)..)  
 * test different models such as Logistic regression , Knn, DecisionTree , RandomForest to get the one that gives the best accuracy. after this step, we try our model on the unlabeled data to analyse how good it detect the difficulty.
- To perform the accuracy , we did the
+* To perform the accuracy , we did the
     * preprocess that consisted in removing punctuation, stopword,X most/least frequent words and to do the stemming  
     * reduce the number of feature using the SVD( instead of 3000 circa we' ve used 900)
     * try other models such as multinomial, neural networks with Keras, Support Vector Machine
