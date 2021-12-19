@@ -38,4 +38,11 @@ After Loading the training_data and doing some Exploratory Data analysy, we' ve 
     * reduce the number of feature using the SVD( instead of 3000 circa we' ve used 900)
     * try other models such as multinomial, neural networks with Keras, Support Vector Machine
 Unortunatelly , all these methods and models didn't improve the classification report in a significant way 
- 
+
+
+
+
+
+## Our Video
+
+[![DMML 2021 - Groupe Microsoft | Detecting the difficulty level of french texts](https://res.cloudinary.com/marcomontalbano/image/upload/v1639949988/video_to_markdown/images/youtube--E2dCIjSSVVc-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=E2dCIjSSVVc "DMML 2021 - Groupe Microsoft | Detecting the difficulty level of french texts")
